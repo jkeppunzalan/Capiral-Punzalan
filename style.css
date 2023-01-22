@@ -153,23 +153,132 @@ p{
     background: red;
 }
 /*-----htdocs---*/
+.gameplay{
+  
+  margin-left: 12px;
+  margin-right: 12px;
+}
+.pics{
+  border-radius: 10%;
+  position: relative;
+  right: -500px;
+  bottom: -275px;
+  width: 500px;
+  height: 250px;
+  float: right;
+} 
+#third .pics{
+  border-radius: 10%;
+  position: relative;
+  right: 500px;
+  bottom: -375px;
+  width: 500px;
+  height: 250px;
+  float: left;
+} 
+
+
+.about-text:nth-child(3){
+  position: relative;
+  bottom: 260px;
+}
+#first .imgntext:nth-child(2){
+  width: 1000px;
+  height: 700px;
+}
+#first .imgntext:nth-child(2) img{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-basis: 50%;
+  float: right; 
+  width: 500px;
+  height: auto;
+  border-radius: 10%;
+}
+
+
+
+
+.imgntext:nth-child(odd) img{
+  justify-content: flex-start;
+  align-items: center;
+  flex-basis: 50%;
+  float: left;
+  width: 500px;
+  height: auto;
+  border-radius: 10%;
+}
+#third .imgntext:nth-child(odd) img{
+  justify-content: flex-end;
+  align-items: center;
+  flex-basis: 50%;
+  float: right;
+  width: 500px;
+  height: auto;
+  border-radius: 10%;
+}
+.imgntext:nth-child(even) img{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-basis: 50%;
+  float: right; 
+  width: 500px;
+  height: auto;
+  border-radius: 10%;
+}
+#third .imgntext:nth-child(even) img{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-basis: 50%;
+  float: left; 
+  width: 500px;
+  height: auto;
+  border-radius: 10%;
+}
+
+.imgntext:nth-child(odd) {
+  text-align: right;
+  width:100%;
+  float: right;
+}
+#third .imgntext:nth-child(odd) {
+  text-align: left;
+  width:100%;
+  float: left;
+}
+.imgntext:nth-child(even){
+  text-align: left;
+  float: left;
+  width:100%;
+}
+#third .imgntext:nth-child(even){
+  text-align: right;
+  float: right;
+  width:100%;
+}
 .about-left-col{
   flex-basis: 50%;
   text-align: left;
+  width: 500px;
 }
 .about-left-col img{
-  width: 100%
+  width: 100%;
+  height: auto;
 }
 .about-right-col{
+  float: right;
   flex-basis: 50%;
   text-align: right;
 }
 .about-right-col img{
-  width: 100%
+  width: 100%;
+  height: 50%;
 }
 .about-text{
   max-width: 500px;
-  margin-right: 100px;
   display: inline-block;
 }
 li{
@@ -179,10 +288,32 @@ li{
     line-height: 22px;
     padding: 10px;
 }
-.about-text p{
+.about-text p,li{
   display: flex;
   justify-content: flex-start;
 }
+.rocket{
+  position: sticky;
+  top: 0px;
+  right: 20px;
+}
+.rocket img{
+  height: 50px;
+  width: auto;
+  position: relative;
+  top: 20px;
+  float: right;
+  opacity: 0.4;
+}
+.rocket:hover img{
+  height: 50px;
+  width: auto;
+  position: relative;
+  top: 20px;
+  float: right;
+  opacity: 1;
+}
+
 /*------memes-----*/
 .memes{
   padding: 10px;
@@ -230,7 +361,7 @@ li{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:grey;
+    background-color:lightgray;
     box-sizing: border-box;
     width: 100%;
     height: auto;
@@ -252,18 +383,45 @@ li{
 .socmed{
   display: flex;
   line-height: 30px;
+  justify-content: space-around;
 }
 .sprite {
+	background: url('images/icon-sprite-15.jpg') no-repeat -724px -185px;
+  width: 29px;
+	height: 30px;
+  
+  
+}
+.sprite:hover {
 	background: url('images/icon-sprite-15.jpg') 
   no-repeat -292px -184px;
-  background-color: white;
+background-color: white;
 	width: 29px;
 	height: 30px;
   border-radius: 50%;
-  margin-right: 30px;
+  
 }
 .sprite2 {
+	background: url('images/icon-sprite-15.jpg') no-repeat -868px -436px;
+  width: 29px;
+	height: 30px;
+  background-color: white;
+  border-radius: 50%;
+}
+.sprite2:hover {
 	background: url('images/icon-sprite-15.jpg') no-repeat -436px -436px;
+	width: 29px;
+	height: 30px;
+  background-color: white;
+  border-radius: 50%;
+}
+.sprite3{
+	background: url('images/icon-sprite-15.jpg') no-repeat -688px -509px;
+	width: 29px;
+	height: 29px;
+}
+.sprite3:hover {
+	background: url('images/icon-sprite-15.jpg') no-repeat -256px -508px;
 	width: 29px;
 	height: 30px;
   background-color: white;
